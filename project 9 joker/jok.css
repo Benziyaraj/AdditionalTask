@@ -1,0 +1,76 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-image: url(image/04c2be54-c0b4-438e-bd26-727b72de7914.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  background: #141414;
+  margin-top: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(175, 159, 159, 0.1);
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#jokeBox {
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f9fafb;
+  min-height: 80px;
+  color: #141414;
+}
+
+#setup {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#punchline {
+  color: #374151;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  background: #1e40af;
+}
+
+#status {
+  font-size: 0.9rem;
+  color: #050505;
+  margin-top: 8px;
+  min-height: 20px;
+}

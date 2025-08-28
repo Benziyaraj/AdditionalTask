@@ -1,0 +1,110 @@
+body {
+  font-family: sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-image: url(—Pngtree—completed\ to\ do\ list\ icon_13281083.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+main {
+  
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 12px rgba(204, 22, 22, 0.1);
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+button:disabled {
+  background: #c50f0f;
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.filters button {
+  background: #ac0911;
+  color: white;
+  padding: 6px 10px;
+}
+.filters button.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cc0909;
+  padding: 6px 0;
+}
+li.completed label {
+  text-decoration: line-through;
+  color: #0d23e7;
+}
+li label {
+  flex: 1;
+  cursor: pointer;
+}
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+li button.delete {
+  background: none;
+  color: #dc2626;
+  font-size: 18px;
+  padding: 0 6px;
+}
+
+#taskCount {
+  margin-top: 10px;
+  color: #141414;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
